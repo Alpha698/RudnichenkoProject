@@ -35,7 +35,7 @@ public class LoginScreen : MonoBehaviour
 
         if (tempLogin == login.ToString() && tempPassword == tempPassword.ToString())
         {
-
+            Resources.Load<GameObject>("UIPanel/MenuPanel");
         }
         else
         {
@@ -44,8 +44,13 @@ public class LoginScreen : MonoBehaviour
     }
 
     private void OpenRegistrationScreen()
-    {
-        Destroy(this);
-        Resources.Load<GameObject>("UIPanel/RegistrationPanel");
+    {        
+        CanvasGroup tempCanvasGroup = GameObject.Find("LoginPanel").GetComponent<CanvasGroup>();
+        tempCanvasGroup.alpha = 0;
+        tempCanvasGroup.interactable = false;
+        CanvasGroup tempCanvasGroup2 = GameObject.Find("RegistrationPanel").GetComponent<CanvasGroup>();
+        tempCanvasGroup2.alpha = 1;
+        tempCanvasGroup2.interactable = true;
+
     }
 }

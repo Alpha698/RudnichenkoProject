@@ -1294,6 +1294,7 @@ GameObject:
   - component: {fileID: 7186056064563695080}
   - component: {fileID: 7186056064563695083}
   - component: {fileID: 595911829}
+  - component: {fileID: 267991978}
   m_Layer: 5
   m_Name: LoginPanel
   m_TagString: Untagged
@@ -1379,6 +1380,18 @@ MonoBehaviour:
   password: {fileID: 7186056063511980665}
   enterButton: {fileID: 7186056063130542888}
   registrarionButton: {fileID: 7186056063320591169}
+--- !u!225 &267991978
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186056064563695085}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7186056064673174496
 GameObject:
   m_ObjectHideFlags: 0

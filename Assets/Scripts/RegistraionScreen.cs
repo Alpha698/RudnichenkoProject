@@ -29,13 +29,19 @@ public class RegistraionScreen : MonoBehaviour
 
     private void TryRegistration()
     {
+        Debug.Log("TryRegistration");
         if (password == tryPassword)
         {
             Debug.Log("login = " + login.ToString());
             PlayerPrefs.SetString("login", login.ToString());
             PlayerPrefs.SetString("password", password.ToString());
-            Destroy(this);
-            Resources.Load<GameObject>("UIPanel/LoginPanel");
+
+            CanvasGroup tempCanvasGroup = GameObject.Find("RegistrationPanel").GetComponent<CanvasGroup>();
+            tempCanvasGroup.alpha = 0;
+            tempCanvasGroup.interactable = false;
+            CanvasGroup tempCanvasGroup2 = GameObject.Find("LoginPanel").GetComponent<CanvasGroup>();
+            tempCanvasGroup2.alpha = 1;
+            tempCanvasGroup2.interactable = true;
         }
     }
 }
