@@ -7,9 +7,9 @@ using TMPro;
 public class LoginScreen : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI login;
+    private TMP_InputField login;
     [SerializeField]
-    private TextMeshProUGUI password;
+    private TMP_InputField password;
     [SerializeField]
     private Button enterButton;
     [SerializeField]
@@ -22,35 +22,32 @@ public class LoginScreen : MonoBehaviour
         registrarionButton.onClick.AddListener(OpenRegistrationScreen);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void TryEnter()
     {
         string tempLogin = PlayerPrefs.GetString("login");
         string tempPassword = PlayerPrefs.GetString("password");
 
-        if (tempLogin == login.ToString() && tempPassword == tempPassword.ToString())
+        if (login.text == "" || password.text == "")
         {
-            Resources.Load<GameObject>("UIPanel/MenuPanel");
+
         }
         else
         {
-            OpenRegistrationScreen();
+            if (tempLogin == login.text && tempPassword == password.text)
+            {
+                ScreenManager.OpenScreen("MenuPanel", "LoginPanel");
+            }
+            else
+            {
+                OpenRegistrationScreen();
+            }
         }
+
+
     }
 
     private void OpenRegistrationScreen()
-    {        
-        CanvasGroup tempCanvasGroup = GameObject.Find("LoginPanel").GetComponent<CanvasGroup>();
-        tempCanvasGroup.alpha = 0;
-        tempCanvasGroup.interactable = false;
-        CanvasGroup tempCanvasGroup2 = GameObject.Find("RegistrationPanel").GetComponent<CanvasGroup>();
-        tempCanvasGroup2.alpha = 1;
-        tempCanvasGroup2.interactable = true;
-
+    {
+        ScreenManager.OpenScreen("RegistrationPanel", "LoginPanel");
     }
 }

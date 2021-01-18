@@ -7,11 +7,11 @@ using TMPro;
 public class RegistraionScreen : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI login;
+    private TMP_InputField login;
     [SerializeField]
-    private TextMeshProUGUI password;
+    private TMP_InputField password;
     [SerializeField]
-    private TextMeshProUGUI tryPassword;
+    private TMP_InputField tryPassword;
     [SerializeField]
     private Button registrarionButton;
 
@@ -30,18 +30,13 @@ public class RegistraionScreen : MonoBehaviour
     private void TryRegistration()
     {
         Debug.Log("TryRegistration");
-        if (password == tryPassword)
+        if (password.text == tryPassword.text)
         {
-            Debug.Log("login = " + login.ToString());
-            PlayerPrefs.SetString("login", login.ToString());
-            PlayerPrefs.SetString("password", password.ToString());
+            Debug.Log("login = " + login.text);
+            PlayerPrefs.SetString("login", login.text);
+            PlayerPrefs.SetString("password", password.text);
 
-            CanvasGroup tempCanvasGroup = GameObject.Find("RegistrationPanel").GetComponent<CanvasGroup>();
-            tempCanvasGroup.alpha = 0;
-            tempCanvasGroup.interactable = false;
-            CanvasGroup tempCanvasGroup2 = GameObject.Find("LoginPanel").GetComponent<CanvasGroup>();
-            tempCanvasGroup2.alpha = 1;
-            tempCanvasGroup2.interactable = true;
+            ScreenManager.OpenScreen("LoginPanel", "RegistrationPanel");
         }
     }
 }
