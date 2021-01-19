@@ -26,7 +26,7 @@ public class MenuScreen : MonoBehaviour
     private void OpenPractice()
     {
         Debug.Log("OpenPractice");
-        ScreenManager.TransitScreen("PracticeAstronomyScreen", "MenuPanel");
+        //ScreenManager.TransitScreen("PracticeAstronomyScreen", "MenuPanel");
     }
 
 }
