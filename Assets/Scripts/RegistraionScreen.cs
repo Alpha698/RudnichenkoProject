@@ -36,7 +36,7 @@ public class RegistraionScreen : MonoBehaviour
             PlayerPrefs.SetString("login", login.text);
             PlayerPrefs.SetString("password", password.text);
 
-            ScreenManager.OpenScreen("LoginPanel", "RegistrationPanel");
+            ScreenManager.TransitScreen("LoginPanel", "RegistrationPanel");
         }
     }
 }

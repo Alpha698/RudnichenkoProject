@@ -35,7 +35,7 @@ public class LoginScreen : MonoBehaviour
         {
             if (tempLogin == login.text && tempPassword == password.text)
             {
-                ScreenManager.OpenScreen("MenuPanel", "LoginPanel");
+                ScreenManager.TransitScreen("MenuPanel", "LoginPanel");
             }
             else
             {
@@ -48,6 +48,6 @@ public class LoginScreen : MonoBehaviour
 
     private void OpenRegistrationScreen()
     {
-        ScreenManager.OpenScreen("RegistrationPanel", "LoginPanel");
+        ScreenManager.TransitScreen("RegistrationPanel", "LoginPanel");
     }
 }

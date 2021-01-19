@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ScreenManager : MonoBehaviour
 {
-    public static void OpenScreen(string openScreenName, string closeScreenName)
+    public static void TransitScreen(string openScreenName, string closeScreenName)
     {
         GameObject closeScreen = GameObject.Find(closeScreenName);
         Destroy(closeScreen);

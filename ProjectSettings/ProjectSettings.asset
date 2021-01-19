@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 20
-  productGUID: 48805bc9aa5f6d2449f3e83ea7752df1
+  productGUID: 6bf9118128776024dbcc5fdf44659745
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -169,7 +169,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.SpiritusGames.TestLearningProject
+    Android: com.vuforia.engine.CoreSamplesUnity
     iPhone: com.vuforia.engine.CoreSamplesUnity
   buildNumber:
     iPhone: 0

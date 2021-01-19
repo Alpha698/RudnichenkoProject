@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 180571ea022e797478a8fcdeaf82c9d5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: URW Bookman
+  fontNames:
+  - URW Bookman
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 95ff3c11cf71bf64da354c8c62b4c76a, type: 3}
+  - {fileID: 12800000, guid: d0707022a4f3eed40b5bed2e6841a44a, type: 3}
+  - {fileID: 12800000, guid: 208fd722616ea3f43a2cd3a66d9be44a, type: 3}
+  - {fileID: 12800000, guid: 7424b97b36acb44438ff858ba80f05ad, type: 3}
+  - {fileID: 12800000, guid: e65965cd7837e664d8fd54d97bfb2888, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
