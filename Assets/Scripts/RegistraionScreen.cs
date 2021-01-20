@@ -43,6 +43,6 @@ public class RegistraionScreen : MonoBehaviour
 
     private void Back()
     {
-
+        ScreenManager.TransitScreen("LoginPanel", "RegistrationPanel");
     }
 }

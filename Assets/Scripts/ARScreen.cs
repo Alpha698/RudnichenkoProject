@@ -15,6 +15,7 @@ public class ARScreen : MonoBehaviour
     private void OpenHome()
     {
         Debug.Log("OpenHome");
+        ScreenManager.isFirstLoad = false;
         SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 

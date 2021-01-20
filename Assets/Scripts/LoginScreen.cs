@@ -13,6 +13,13 @@ public class LoginScreen : MonoBehaviour
     [SerializeField]
     private Button registrarionButton;
 
+    private void Awake()
+    {
+        if (!ScreenManager.isFirstLoad)
+        {
+            ScreenManager.TransitScreen("MenuPanel", "LoginPanel");
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
