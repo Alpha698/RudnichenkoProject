@@ -69,7 +69,7 @@ public class PracticeAstronomyScreen : MonoBehaviour
             value++;
         }
 
-        result.text = "Ваш результат: "+ value + " балів";
+        result.text = "Ваш результат: "+ value + " б.";
 }
 
     public static Toggle GetActive(ToggleGroup aGroup)
