@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -14,11 +12,14 @@ public class RegistraionScreen : MonoBehaviour
     private TMP_InputField tryPassword;
     [SerializeField]
     private Button registrarionButton;
+    [SerializeField]
+    private Button backButton;
 
     // Start is called before the first frame update
     void Start()
     {
         registrarionButton.onClick.AddListener(TryRegistration);
+        backButton.onClick.AddListener(Back);
     }
 
     // Update is called once per frame
@@ -38,5 +39,10 @@ public class RegistraionScreen : MonoBehaviour
 
             ScreenManager.TransitScreen("LoginPanel", "RegistrationPanel");
         }
+    }
+
+    private void Back()
+    {
+
     }
 }

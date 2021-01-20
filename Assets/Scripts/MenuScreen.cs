@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class MenuScreen : MonoBehaviour
@@ -26,7 +24,7 @@ public class MenuScreen : MonoBehaviour
     private void OpenPractice()
     {
         Debug.Log("OpenPractice");
-        //ScreenManager.TransitScreen("PracticeAstronomyScreen", "MenuPanel");
+        ScreenManager.TransitScreen("PracticeAstronomyScreen", "MenuPanel");
     }
 
 }

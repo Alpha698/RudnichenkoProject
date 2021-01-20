@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -26,7 +24,7 @@ public class TheoryAstronomyScreen : MonoBehaviour
 
     private void OpenAR()
     {
-        Debug.Log("OpenPractice");
+        Debug.Log("OpenAR");
         SceneManager.LoadScene("ARAstronomy", LoadSceneMode.Single);
     }
 
